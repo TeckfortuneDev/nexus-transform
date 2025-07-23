@@ -61,9 +61,9 @@ const Services = () => {
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-background to-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* TeckFortune Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent font-medium text-sm mb-6">
+          <div className="inline-flex items-center px-4 py-2 glass-effect border border-accent/30 rounded-full text-accent font-medium text-sm mb-6 hover-glass">
             Our Expertise
           </div>
           <h2 className="text-4xl md:text-6xl font-poppins font-bold text-primary mb-6">
@@ -85,7 +85,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className={`${isAccent ? 'card-accent' : 'card-premium'} group hover-lift cursor-pointer`}
+                className={`${isAccent ? 'card-accent hover-glow' : 'card-maroon hover-lift'} group cursor-pointer glass-hover`}
               >
                 <div className="space-y-6">
                   {/* Icon */}
@@ -148,10 +148,10 @@ const Services = () => {
               can accelerate your digital transformation journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="btn-accent">
+              <Button className="btn-glass-accent hover-glow">
                 Schedule Consultation
               </Button>
-              <Button variant="outline" className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button className="btn-glass hover-glass">
                 View Case Studies
               </Button>
             </div>

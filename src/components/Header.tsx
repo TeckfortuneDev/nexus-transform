@@ -14,17 +14,20 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-soft">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-effect backdrop-blur-md border-b border-primary/20 shadow-glass">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* TeckFortune Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mr-3">
-                <span className="text-2xl font-bold text-primary-foreground">T</span>
+              <div className="relative w-12 h-12 bg-gradient-maroon rounded-xl flex items-center justify-center mr-3 hover:scale-110 transition-transform duration-300">
+                {/* Maroonish Red (80%), Black (10%), White (10%) */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary via-black-accent to-white-accent opacity-90"></div>
+                <span className="relative text-2xl font-bold text-primary-foreground drop-shadow-lg">T</span>
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div>
-                <h1 className="text-xl font-poppins font-bold text-primary">TechConsult</h1>
+                <h1 className="text-xl font-poppins font-bold text-gradient-maroon">TeckFortune</h1>
                 <p className="text-xs text-muted-foreground">Digital Transformation</p>
               </div>
             </div>
@@ -47,12 +50,12 @@ const Header = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Buttons with Glass Effect */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
-            <Button variant="outline" className="btn-outline">
+            <Button variant="outline" className="btn-glass">
               Login
             </Button>
-            <Button className="btn-accent">
+            <Button className="btn-glass-accent">
               Get Consultation
             </Button>
           </div>
@@ -68,10 +71,10 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation with Glass Effect */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border shadow-large">
-            <div className="px-4 py-6 space-y-4">
+          <div className="lg:hidden absolute top-full left-0 right-0 glass-effect border-b border-primary/20 shadow-glass">
+            <div className="px-4 py-6 space-y-4 backdrop-blur-md">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -83,10 +86,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <Button variant="outline" className="w-full btn-outline">
+                <Button variant="outline" className="w-full btn-glass">
                   Login
                 </Button>
-                <Button className="w-full btn-accent">
+                <Button className="w-full btn-glass-accent">
                   Get Consultation
                 </Button>
               </div>

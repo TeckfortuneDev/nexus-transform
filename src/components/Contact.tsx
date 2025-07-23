@@ -85,9 +85,9 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* TeckFortune Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent font-medium text-sm mb-6">
+          <div className="inline-flex items-center px-4 py-2 glass-effect border border-accent/30 rounded-full text-accent font-medium text-sm mb-6 hover-glass">
             Get In Touch
           </div>
           <h2 className="text-4xl md:text-6xl font-poppins font-bold text-primary mb-6">
@@ -103,7 +103,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="card-premium">
+            <Card className="card-glass">
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-poppins font-bold text-primary mb-2">
@@ -210,13 +210,13 @@ const Contact = () => {
                     />
                   </div>
 
-                  {/* Submit */}
+                  {/* Submit with Glass Effect */}
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button type="submit" className="btn-accent flex-1">
+                    <Button type="submit" className="btn-glass-accent flex-1 hover-glow">
                       <Send className="mr-2 w-4 h-4" />
                       Send Message
                     </Button>
-                    <Button type="button" variant="outline" className="btn-outline">
+                    <Button type="button" className="btn-glass hover-glass">
                       <Calendar className="mr-2 w-4 h-4" />
                       Schedule Call
                     </Button>
@@ -269,7 +269,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <Button className="w-full btn-gold">
+                <Button className="w-full btn-glass-gold hover-glow">
                   <CheckCircle className="mr-2 w-4 h-4" />
                   Start Live Chat
                 </Button>

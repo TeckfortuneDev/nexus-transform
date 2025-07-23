@@ -59,9 +59,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-gradient-hero text-primary-foreground relative overflow-hidden">
+      {/* Glass Effect Overlay */}
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+      
       {/* Newsletter Section */}
-      <div className="border-b border-primary-foreground/10">
+      <div className="relative z-10 border-b border-primary-foreground/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h3 className="text-3xl font-poppins font-bold mb-4">
@@ -76,9 +79,9 @@ const Footer = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
+                className="glass-effect border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
               />
-              <Button className="btn-accent">
+              <Button className="btn-glass-accent">
                 Subscribe
               </Button>
             </div>
@@ -91,17 +94,18 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-6 gap-8">
-          {/* Company Info */}
+          {/* TeckFortune Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mr-3">
-                  <span className="text-2xl font-bold text-white">T</span>
+                <div className="relative w-12 h-12 bg-gradient-maroon rounded-xl flex items-center justify-center mr-3 hover:scale-110 transition-transform duration-300">
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary via-black-accent to-white-accent opacity-90"></div>
+                  <span className="relative text-2xl font-bold text-primary-foreground drop-shadow-lg">T</span>
                 </div>
                 <div>
-                  <h1 className="text-xl font-poppins font-bold">TechConsult</h1>
+                  <h1 className="text-xl font-poppins font-bold">TeckFortune</h1>
                   <p className="text-sm text-primary-foreground/60">Digital Transformation</p>
                 </div>
               </div>
@@ -124,7 +128,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-accent mr-3" />
-                <span className="text-sm">hello@techconsult.com</span>
+                <span className="text-sm">hello@teckfortune.com</span>
               </div>
             </div>
 
@@ -166,12 +170,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Bottom Bar with Glass Effect */}
+      <div className="relative z-10 border-t border-primary-foreground/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 glass-effect">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-primary-foreground/60">
-              <p>&copy; 2024 TechConsult. All rights reserved.</p>
+              <p>&copy; 2024 TeckFortune. All rights reserved.</p>
               <div className="flex space-x-6">
                 <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>

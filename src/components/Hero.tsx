@@ -21,13 +21,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent font-medium text-sm animate-fadeInUp">
+          {/* TeckFortune Badge */}
+          <div className="inline-flex items-center px-4 py-2 glass-effect border border-accent/30 rounded-full text-accent font-medium text-sm animate-fadeInUp hover-glass">
             <TrendingUp className="w-4 h-4 mr-2" />
             Leading Digital Transformation Since 2015
           </div>
 
-          {/* Main Headline */}
+          {/* TeckFortune Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-poppins font-bold text-primary-foreground leading-tight animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
             Transform Your
             <span className="text-gradient-accent"> Business </span>
@@ -61,24 +61,24 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Glass CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
-            <Button className="btn-accent group px-8 py-4 text-lg">
+            <Button className="btn-glass-accent group px-8 py-4 text-lg hover-glow">
               Start Your Transformation
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary group px-8 py-4 text-lg">
+            <Button className="btn-glass group px-8 py-4 text-lg hover-glass">
               <Play className="mr-2 h-5 w-5" />
               Watch Our Story
             </Button>
           </div>
 
-          {/* Trust Indicators */}
+          {/* TeckFortune Trust Indicators */}
           <div className="pt-12 animate-fadeInUp" style={{ animationDelay: '1s' }}>
             <p className="text-primary-foreground/60 text-sm mb-6">Trusted by industry leaders worldwide</p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               {['Fortune 500', 'Tech Giants', 'Healthcare Leaders', 'Financial Services', 'Manufacturing'].map((company, index) => (
-                <div key={index} className="px-6 py-3 bg-primary-foreground/10 rounded-lg text-primary-foreground/80 font-medium">
+                <div key={index} className="px-6 py-3 glass-effect rounded-lg text-primary-foreground/80 font-medium hover-glass transition-all duration-300">
                   {company}
                 </div>
               ))}

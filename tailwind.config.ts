@@ -27,7 +27,8 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))'
+					glow: 'hsl(var(--primary-glow))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -50,6 +51,14 @@ export default {
 					DEFAULT: 'hsl(var(--gold))',
 					foreground: 'hsl(var(--gold-foreground))',
 					glow: 'hsl(var(--gold-glow))'
+				},
+				'black-accent': {
+					DEFAULT: 'hsl(var(--black-accent))',
+					foreground: 'hsl(var(--black-accent-foreground))'
+				},
+				'white-accent': {
+					DEFAULT: 'hsl(var(--white-accent))',
+					foreground: 'hsl(var(--white-accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -77,17 +86,20 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-maroon': 'var(--gradient-maroon)',
 				'gradient-accent': 'var(--gradient-accent)',
 				'gradient-gold': 'var(--gradient-gold)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-glass': 'var(--gradient-glass)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
 				'large': 'var(--shadow-large)',
 				'accent': 'var(--shadow-accent)',
-				'gold': 'var(--shadow-gold)'
+				'gold': 'var(--shadow-gold)',
+				'glass': 'var(--shadow-glass)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -148,6 +160,22 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px hsl(var(--accent) / 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 40px hsl(var(--accent) / 0.8)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						backgroundPosition: '-200% center'
+					},
+					'100%': {
+						backgroundPosition: '200% center'
+					}
 				}
 			},
 			animation: {
@@ -156,7 +184,9 @@ export default {
 				'fadeInUp': 'fadeInUp 0.8s ease-out forwards',
 				'slideInRight': 'slideInRight 0.8s ease-out forwards',
 				'scaleIn': 'scaleIn 0.6s ease-out forwards',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'shimmer': 'shimmer 2s linear infinite'
 			}
 		}
 	},
