@@ -22,5 +22,6 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'docs',
   },
-  base: './',
+  // Set base to root for custom domain deployment
+  base: '/',
 }));
