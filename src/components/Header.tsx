@@ -7,9 +7,9 @@ const Header = () => {
 
   const navigation = [
     { name: 'Services', href: '#services', hasDropdown: true },
-    { name: 'Solutions', href: '#solutions', hasDropdown: true },
+    { name: 'Industries', href: '#industries', hasDropdown: true },
     { name: 'Case Studies', href: '#case-studies' },
-    { name: 'Resources', href: '#resources', hasDropdown: true },
+    { name: 'Careers', href: '#careers' },
     { name: 'About', href: '#about' },
   ];
 
@@ -53,7 +53,7 @@ const Header = () => {
           {/* CTA Buttons with Glass Effect */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <Button variant="outline" className="btn-glass">
-              Login
+              Careers
             </Button>
             <Button className="btn-glass-accent">
               Get Consultation
@@ -87,7 +87,7 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-3">
                 <Button variant="outline" className="w-full btn-glass">
-                  Login
+                  Careers
                 </Button>
                 <Button className="w-full btn-glass-accent">
                   Get Consultation
