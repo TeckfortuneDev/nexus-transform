@@ -13,11 +13,31 @@ import {
   ArrowRight,
   Star,
   Globe,
-  Award
+  Award,
+  Mail,
+  GraduationCap,
+  DollarSign
 } from 'lucide-react';
 
 const Careers = () => {
   const openings = [
+    {
+      title: 'Software Developer',
+      department: 'Technology',
+      location: 'Tampa, FL 33637',
+      type: 'Full-time',
+      experience: '12 months',
+      icon: Code,
+      description: 'Develop software solutions by studying information needs, conferring with users, and studying systems flow, data usage, and work processes. Plan and execute a full software development lifecycle for each assigned project, adhering to company standards and expectations. Document and demonstrate solutions by developing documentation, flowcharts, layouts, diagrams, charts, code comments and clear code. Work closely with clients and cross functional departments to communicate project statuses and proposals. Occasional travel to unanticipated client-site locations within USA may be required as a roving employee.',
+      requirements: ['Master\'s Degree or foreign equivalent in IT or CS or CIS or ENGG', '12 months of related work experience'],
+      salary: '$116,771.00 per Annum',
+      education: 'Master\'s Degree or foreign equivalent in IT or CS or CIS or ENGG. along with 12 months of related work experience',
+      schedule: '9:00 am – 6:00 pm, Monday – Friday',
+      contact: 'Director Hari Priya Vallabahneni',
+      address: '8875 Hidden River Parkway, Suite # 300, Tampa, FL 33637',
+      color: 'accent',
+      featured: true
+    },
     {
       title: 'Senior AI/ML Engineer',
       department: 'Technology',
@@ -181,6 +201,11 @@ const Careers = () => {
                             <Badge variant="secondary" className="text-xs">
                               {job.type}
                             </Badge>
+                            {job.featured && (
+                              <Badge className="text-xs bg-gradient-accent text-white">
+                                NOW HIRING
+                              </Badge>
+                            )}
                           </div>
                           
                           <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-3">
@@ -205,6 +230,40 @@ const Careers = () => {
                           </div>
                           
                           <p className="text-foreground mb-4">{job.description}</p>
+                          
+                          {/* Additional Details for Featured Job */}
+                          {job.education && (
+                            <div className="mb-3">
+                              <div className="flex items-center gap-2 mb-1">
+                                <GraduationCap className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm font-medium text-foreground">Education:</span>
+                              </div>
+                              <p className="text-sm text-muted-foreground ml-6">{job.education}</p>
+                            </div>
+                          )}
+                          
+                          {job.schedule && (
+                            <div className="mb-3">
+                              <div className="flex items-center gap-2 mb-1">
+                                <Clock className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm font-medium text-foreground">Schedule:</span>
+                              </div>
+                              <p className="text-sm text-muted-foreground ml-6">{job.schedule}</p>
+                            </div>
+                          )}
+                          
+                          {job.contact && (
+                            <div className="mb-3">
+                              <div className="flex items-center gap-2 mb-1">
+                                <Mail className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm font-medium text-foreground">Contact:</span>
+                              </div>
+                              <p className="text-sm text-muted-foreground ml-6">{job.contact}</p>
+                              {job.address && (
+                                <p className="text-sm text-muted-foreground ml-6">{job.address}</p>
+                              )}
+                            </div>
+                          )}
                           
                           <div className="flex flex-wrap gap-2">
                             {job.requirements.slice(0, 3).map((req, reqIndex) => (
@@ -233,8 +292,12 @@ const Careers = () => {
                       <Button 
                         className={`${isAccent ? 'btn-glass-accent' : 'btn-glass-gold'} group px-8 py-3 hover-glow`}
                       >
-                        Apply Now
-                        <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        {job.featured ? 'Apply via Email' : 'Apply Now'}
+                        {job.featured ? (
+                          <Mail className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        ) : (
+                          <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        )}
                       </Button>
                     </div>
                   </div>

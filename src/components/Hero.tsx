@@ -61,15 +61,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Glass CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
+          {/* Glass CTA Button */}
+          <div className="flex justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
             <Button className="btn-glass-accent group px-8 py-4 text-lg hover-glow">
               Start Your Transformation
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button className="btn-glass group px-8 py-4 text-lg hover-glass">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Our Story
             </Button>
           </div>
 
