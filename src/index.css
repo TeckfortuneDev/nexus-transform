@@ -166,7 +166,7 @@ All colors MUST be HSL.
   
   .btn-glass {
     @apply relative px-8 py-4 rounded-xl font-semibold text-primary
-           bg-white/12 backdrop-blur-lg border border-white/25 shadow-glass
+           bg-white/10 backdrop-blur-lg border border-white/25 shadow-glass
            transition-all duration-500 hover:bg-white/20 hover:scale-[1.02] hover:shadow-large
            before:absolute before:inset-0 before:rounded-xl 
            before:bg-gradient-to-r before:from-white/20 before:to-transparent 
@@ -185,20 +185,20 @@ All colors MUST be HSL.
   
   .btn-glass-accent {
     @apply relative px-8 py-4 rounded-xl font-semibold text-accent-foreground
-           bg-accent/18 backdrop-blur-lg border border-accent/35 shadow-accent/20
+           bg-accent/20 backdrop-blur-lg border border-accent/30 shadow-accent/20
            transition-all duration-500 hover:bg-accent/30 hover:scale-[1.02] hover:shadow-accent
            before:absolute before:inset-0 before:rounded-xl 
-           before:bg-gradient-to-r before:from-white/15 before:to-transparent 
+           before:bg-gradient-to-r before:from-white/10 before:to-transparent 
            before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300
            after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-accent/20;
   }
   
   .btn-glass-gold {
     @apply relative px-8 py-4 rounded-xl font-semibold text-gold-foreground
-           bg-gold/18 backdrop-blur-lg border border-gold/35 shadow-gold/20
+           bg-gold/20 backdrop-blur-lg border border-gold/30 shadow-gold/20
            transition-all duration-500 hover:bg-gold/30 hover:scale-[1.02] hover:shadow-gold
            before:absolute before:inset-0 before:rounded-xl 
-           before:bg-gradient-to-r before:from-white/15 before:to-transparent 
+           before:bg-gradient-to-r before:from-white/10 before:to-transparent 
            before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300
            after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-gold/20;
   }
@@ -223,8 +223,8 @@ All colors MUST be HSL.
   }
   
   .card-glass {
-    @apply relative bg-white/12 backdrop-blur-lg border border-white/25 rounded-2xl p-8 shadow-glass
-           transition-all duration-500 hover:bg-white/18 hover:shadow-large hover:-translate-y-3
+    @apply relative bg-white/10 backdrop-blur-lg border border-white/25 rounded-2xl p-8 shadow-glass
+           transition-all duration-500 hover:bg-white/20 hover:shadow-large hover:-translate-y-3
            before:absolute before:inset-0 before:rounded-2xl 
            before:bg-gradient-to-br before:from-white/10 before:to-transparent 
            before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300
