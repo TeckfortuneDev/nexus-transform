@@ -217,7 +217,7 @@ All colors MUST be HSL.
     @apply relative bg-gradient-card border border-card-border rounded-2xl p-8 shadow-soft
            backdrop-blur-md transition-all duration-500 hover:shadow-large hover:-translate-y-3
            before:absolute before:inset-0 before:rounded-2xl 
-           before:bg-gradient-to-br before:from-white/8 before:to-transparent 
+           before:bg-gradient-to-br before:from-white/10 before:to-transparent 
            before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300
            after:absolute after:inset-0 after:rounded-2xl after:ring-1 after:ring-white/5;
   }
