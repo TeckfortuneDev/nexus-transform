@@ -223,19 +223,7 @@ const About = () => {
 
         {/* Certifications */}
         <div className="text-center">
-          <h3 className="text-3xl font-poppins font-bold text-primary mb-8">
-            Certifications & Partnerships
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-            {certifications.map((cert, index) => (
-              <div key={index} className="bg-card border border-card-border rounded-xl p-4 text-center">
-                <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Award className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-semibold text-primary text-sm">{cert}</p>
-              </div>
-            ))}
-          </div>
+  
 
           <Button className="btn-primary">
             Join Our Team

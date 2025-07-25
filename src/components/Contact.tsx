@@ -51,25 +51,11 @@ const Contact = () => {
 
   const offices = [
     {
-      city: 'New York',
-      address: '123 Tech Avenue, Suite 500',
+      city: 'Tampa',
+      address: '8875 Hidden River Parkway, Suite # 300',
       phone: '+1 (555) 123-4567',
-      email: 'ny@techconsult.com',
+      email: 'support@teckfortune.com',
       timezone: 'EST'
-    },
-    {
-      city: 'San Francisco',
-      address: '456 Innovation Drive, Floor 15',
-      phone: '+1 (555) 987-6543',
-      email: 'sf@techconsult.com',
-      timezone: 'PST'
-    },
-    {
-      city: 'London',
-      address: '789 Digital Square, Level 8',
-      phone: '+44 20 7123 4567',
-      email: 'london@techconsult.com',
-      timezone: 'GMT'
     }
   ];
 

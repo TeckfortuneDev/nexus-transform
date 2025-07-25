@@ -33,82 +33,10 @@ const Careers = () => {
       salary: '$116,771.00 per Annum',
       education: 'Master\'s Degree or foreign equivalent in IT or CS or CIS or ENGG. along with 12 months of related work experience',
       schedule: '9:00 am – 6:00 pm, Monday – Friday',
-      contact: 'Director Hari Priya Vallabahneni',
+      contact: 'Director:  Hari Priya Vallabahneni',
       address: '8875 Hidden River Parkway, Suite # 300, Tampa, FL 33637',
       color: 'accent',
       featured: true
-    },
-    {
-      title: 'Senior AI/ML Engineer',
-      department: 'Technology',
-      location: 'San Francisco, CA',
-      type: 'Full-time',
-      experience: '5+ years',
-      icon: Brain,
-      description: 'Lead AI initiatives and build cutting-edge machine learning solutions for enterprise clients.',
-      requirements: ['PhD/MS in CS or related field', 'Python, TensorFlow, PyTorch', 'Cloud platforms (AWS/Azure)', 'MLOps experience'],
-      salary: '$180k - $250k',
-      color: 'accent'
-    },
-    {
-      title: 'Cloud Solutions Architect',
-      department: 'Engineering',
-      location: 'Remote / Hybrid',
-      type: 'Full-time',
-      experience: '7+ years',
-      icon: Globe,
-      description: 'Design and implement scalable cloud architectures for Fortune 500 digital transformations.',
-      requirements: ['AWS/Azure/GCP certifications', 'Kubernetes, Docker', 'Infrastructure as Code', 'Enterprise architecture'],
-      salary: '$160k - $220k',
-      color: 'gold'
-    },
-    {
-      title: 'Cybersecurity Consultant',
-      department: 'Security',
-      location: 'New York, NY',
-      type: 'Full-time',
-      experience: '4+ years',
-      icon: Shield,
-      description: 'Provide security consulting and implement enterprise-grade security solutions.',
-      requirements: ['CISSP/CISM certification', 'Penetration testing', 'Risk assessment', 'Compliance frameworks'],
-      salary: '$140k - $190k',
-      color: 'accent'
-    },
-    {
-      title: 'Full-Stack Developer',
-      department: 'Development',
-      location: 'Austin, TX',
-      type: 'Full-time',
-      experience: '3+ years',
-      icon: Code,
-      description: 'Build modern web applications and digital solutions using latest technologies.',
-      requirements: ['React, Node.js, TypeScript', 'Cloud deployment', 'Database design', 'Agile methodologies'],
-      salary: '$120k - $160k',
-      color: 'gold'
-    },
-    {
-      title: 'Business Technology Analyst',
-      department: 'Strategy',
-      location: 'Chicago, IL',
-      type: 'Full-time',
-      experience: '2+ years',
-      icon: TrendingUp,
-      description: 'Bridge business and technology to drive digital transformation strategies.',
-      requirements: ['Business analysis', 'Process optimization', 'Stakeholder management', 'Technical documentation'],
-      salary: '$90k - $130k',
-      color: 'accent'
-    },
-    {
-      title: 'DevOps Engineer',
-      department: 'Infrastructure',
-      location: 'Seattle, WA',
-      type: 'Full-time',
-      experience: '4+ years',
-      icon: Award,
-      description: 'Automate deployments and manage CI/CD pipelines for enterprise applications.',
-      requirements: ['Jenkins, GitLab CI', 'AWS/Azure DevOps', 'Terraform, Ansible', 'Monitoring tools'],
-      salary: '$130k - $170k',
-      color: 'gold'
     }
   ];
 

@@ -37,19 +37,15 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-primary-foreground/80 max-w-4xl mx-auto leading-relaxed animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            We help Fortune 500 companies and growing enterprises implement cutting-edge technology solutions 
+            We help Software companies and growing enterprises implement cutting-edge technology solutions 
             that drive measurable business outcomes and sustainable competitive advantages.
           </p>
 
           {/* Key Stats */}
           <div className="flex flex-wrap justify-center gap-8 text-primary-foreground animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">500+</div>
+              <div className="text-3xl font-bold text-accent">Multiple</div>
               <div className="text-sm opacity-80">Projects Delivered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gold">$2.5B+</div>
-              <div className="text-sm opacity-80">Value Created</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-accent">98%</div>
