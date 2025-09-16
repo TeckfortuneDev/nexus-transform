@@ -16,7 +16,8 @@ import {
   Award,
   Mail,
   GraduationCap,
-  DollarSign
+  DollarSign,
+  Calendar
 } from 'lucide-react';
 
 const Careers = () => {
@@ -28,7 +29,7 @@ const Careers = () => {
       type: 'Full-time',
       experience: '12 months',
       icon: Code,
-      description: 'Develop software solutions by studying information needs, conferring with users, and studying systems flow, data usage, and work processes. Plan and execute a full software development lifecycle for each assigned project, adhering to company standards and expectations. Document and demonstrate solutions by developing documentation, flowcharts, layouts, diagrams, charts, code comments and clear code. Work closely with clients and cross functional departments to communicate project statuses and proposals. Occasional travel to unanticipated client-site locations within USA may be required as a roving employee.',
+      description: 'Develop software solutions by studying information needs, conferring with users, and studying systems flow, data usage, and work processes. Plan and execute a full software development lifecycle (SDLC) including requirements analysis, design, development, testing, and deployment. Collaborate cross-functionally to deliver high-quality software.',
       requirements: ['Master\'s Degree or foreign equivalent in IT or CS or CIS or ENGG', '12 months of related work experience'],
       salary: '$116,771.00 per Annum',
       education: 'Master\'s Degree or foreign equivalent in IT or CS or CIS or ENGG. along with 12 months of related work experience',
@@ -36,7 +37,9 @@ const Careers = () => {
       contact: 'Director:  Hari Priya Vallabahneni',
       address: '8875 Hidden River Parkway, Suite # 300, Tampa, FL 33637',
       color: 'accent',
-      featured: true
+      featured: true,
+      openingDate: '07/14/2025',
+      closingDate: '08/14/2025'
     }
   ];
 
@@ -154,6 +157,22 @@ const Careers = () => {
                             }`}>
                               <Star className="w-4 h-4 mr-1" />
                               {job.salary}
+                            </div>
+                          </div>
+
+                          {/* Dates of Opening and Closing */}
+                          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-3">
+                            <div className="flex items-center">
+                              <Calendar className="w-4 h-4 mr-1" />
+                              <span>
+                                <span className="font-medium text-foreground">Date of Opening:</span> {job.openingDate}
+                              </span>
+                            </div>
+                            <div className="flex items-center">
+                              <Calendar className="w-4 h-4 mr-1" />
+                              <span>
+                                <span className="font-medium text-foreground">Date of Closing:</span> {job.closingDate}
+                              </span>
                             </div>
                           </div>
                           
